@@ -42,12 +42,12 @@ const Explore = ({
   );
 };
 
-new RampInstantSDK({
-  hostAppName: 'Maker DAO',
-  hostLogoUrl: 'https://cdn-images-1.medium.com/max/2600/1*nqtMwugX7TtpcS-5c3lRjw.png',
-  variant: 'embedded-desktop',
-  containerNode: document.getElementById('ramp-container'),
-}).show();
+// new RampInstantSDK({
+//   hostAppName: 'Maker DAO',
+//   hostLogoUrl: 'https://cdn-images-1.medium.com/max/2600/1*nqtMwugX7TtpcS-5c3lRjw.png',
+//   variant: 'embedded-desktop',
+//   containerNode: document.getElementById('ramp-container'),
+// }).show();
 
 const enhance = compose(
   withAssetsContextPageWrapper,
