@@ -2,13 +2,13 @@ import { compose } from 'recompose';
 import { withMetamaskContextPageWrapper } from 'components/MetamaskContext';
 import { withAssetsContextPageWrapper } from 'components/AssetsContext';
 import { LocalStorageKeys } from 'constants/localStorageKeys';
-import {
-  getValueFromLocalStorage,
-} from 'utils/helpers';
-import AssetExplorer from 'components/AssetExplorer';
-import Loading from 'components/Loading';
-import { METAMASK_ERRORS } from 'components/MetamaskContext/constants';
-import MetamaskErrors from 'components/MetamaskErrors';
+// import {
+//   getValueFromLocalStorage,
+// } from 'utils/helpers';
+// import AssetExplorer from 'components/AssetExplorer';
+// import Loading from 'components/Loading';
+// import { METAMASK_ERRORS } from 'components/MetamaskContext/constants';
+// import MetamaskErrors from 'components/MetamaskErrors';
 
 const Explore = ({
   assetsContext,
