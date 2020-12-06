@@ -9,6 +9,7 @@ import AssetExplorer from 'components/AssetExplorer';
 import Loading from 'components/Loading';
 import { METAMASK_ERRORS } from 'components/MetamaskContext/constants';
 import MetamaskErrors from 'components/MetamaskErrors';
+import { RampInstantSDK } from '@ramp-network/ramp-instant-sdk';
 
 const Explore = ({
   assetsContext,
@@ -18,6 +19,7 @@ const Explore = ({
     assets,
     loadingAssets,
   } = assetsContext;
+  <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>
   const hasMetamaskErrors = metamaskContext.metamaskErrors();
   if(hasMetamaskErrors.error){
     return (

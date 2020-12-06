@@ -19,7 +19,7 @@ const Explore = ({
     assets,
     loadingAssets,
   } = assetsContext;
-
+<a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>
   const hasMetamaskErrors = metamaskContext.metamaskErrors();
   if (hasMetamaskErrors.error) {
     return (
