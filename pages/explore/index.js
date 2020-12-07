@@ -29,7 +29,12 @@ const Explore = ({
     );
   }
   if (loadingAssets) {
-    return <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;;
+    return new RampInstantSDK({
+      hostAppName: 'Maker DAO',
+      hostLogoUrl: 'https://cdn-images-1.medium.com/max/2600/1*nqtMwugX7TtpcS-5c3lRjw.png',
+      variant: 'embedded-desktop',
+      containerNode: document.getElementById('ramp-container'),
+    }).show();
     
   }
   return (
