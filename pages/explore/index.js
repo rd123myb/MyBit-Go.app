@@ -29,7 +29,8 @@ const Explore = ({
     );
   }
   if (loadingAssets) {
-    return <Loading message="Loading assets" />;
+    return <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;;
+    
   }
   return (
     <AssetExplorer
