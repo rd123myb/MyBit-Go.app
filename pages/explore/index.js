@@ -21,21 +21,21 @@ const Explore = ({
   } = assetsContext;
 {/* <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a> */}
   const hasMetamaskErrors = metamaskContext.metamaskErrors();
-  if (hasMetamaskErrors.error) {
-    return (
-      <MetamaskErrors
-        shouldRenderComponent={false}
-      />
-    );
-  }
+  // if (hasMetamaskErrors.error) {
+  //   return (
+  //     <MetamaskErrors
+  //       shouldRenderComponent={false}
+  //     />
+  //   );
+  // }
   if (loadingAssets) {
     // return <Loading message="Loading assets" />;
-    return new RampInstantSDK({
-      hostAppName: 'MYB test',
-      hostLogoUrl: 'https://rory-my-bit-go-app-test.vercel.app/',
-      variant: 'embedded-desktop',
-      containerNode: document.getElementById('ramp-container'),
-    }).show();
+    // return new RampInstantSDK({
+    //   hostAppName: 'MYB test',
+    //   hostLogoUrl: 'https://rory-my-bit-go-app-test.vercel.app/',
+    //   variant: 'embedded-desktop',
+    //   containerNode: document.getElementById('ramp-container'),
+    // }).show();
     
   }
   return (

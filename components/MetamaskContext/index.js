@@ -82,6 +82,7 @@ class MetamaskProvider extends Component {
 
     let toRender = null;
     let error;
+    //NOTE: the metamask logic checking is here
     if (!userHasMetamask && extensionUrl) {
       error = METAMASK_ERRORS.NO_METAMASK;
       toRender = (
@@ -150,6 +151,7 @@ your MetaMask account to get started.
       }
       // Modern dapp browsers...
       if (window.ethereum) {
+        // NOTE: seems like MetaMask provides ethereum, so the plugin needs to be installed and activated or there's no web3 for the api to work
         this.props.setUserHasMetamask(true);
         const { ethereum } = window;
         window.web3js = new Web3(ethereum);

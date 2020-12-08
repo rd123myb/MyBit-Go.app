@@ -19,14 +19,15 @@ const Explore = ({
     assets,
     loadingAssets,
   } = assetsContext;
-  const hasMetamaskErrors = metamaskContext.metamaskErrors();
-  if(hasMetamaskErrors.error){
-    return (
-      <MetamaskErrors
-        shouldRenderComponent={false}
-      />
-    )
-  }
+  //NOTE: metaMask check for index.js (looks identical to explore page though, but different url)
+  // const hasMetamaskErrors = metamaskContext.metamaskErrors();
+  // if(hasMetamaskErrors.error){
+  //   return (
+  //     <MetamaskErrors
+  //       shouldRenderComponent={false}
+  //     />
+  //   )
+  // }
   if (loadingAssets) {
   // <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;
    return <Loading message="Loading assets" />;

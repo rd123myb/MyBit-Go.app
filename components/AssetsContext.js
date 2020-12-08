@@ -66,14 +66,17 @@ class AssetsProvider extends React.PureComponent {
     }
   };
 
+  //NOTE: disabled check here so that it starts SDK, fetches stuff without checking
   componentDidMount = () => {
     const { userHasMetamask } = this.props.metamaskContext;
-    if (userHasMetamask) {
-      this.initialiseSDK();
-      this.init();
-    } else {
-      this.setState({ loadingAssets: false });
-    }
+    // if (userHasMetamask) {
+    //   this.initialiseSDK();
+    //   this.init();
+    // } else {
+    //   this.setState({ loadingAssets: false });
+    // }
+    this.initialiseSDK();
+    this.init();
   };
 
   /*
@@ -93,10 +96,11 @@ class AssetsProvider extends React.PureComponent {
         assetsWithPendingIpfs: {},
       });
       this.fetchAssetsFromSDK();
+      //NOTE: so assets come from airtable database + api
       usingAirtable && this.getAssetsFromAirtable(network);
     }
   };
-
+  //NOTE: seems like metamask is needed here
   fetchAssetsFromSDK = () => {
     const { metamaskContext } = this.props;
     const { network, user } = metamaskContext;
@@ -118,7 +122,7 @@ class AssetsProvider extends React.PureComponent {
       );
     });
   };
-
+  //NOTE: no metamask meaning there's no network available!
   initialiseSDK = async () => {
     const network = this.props.metamaskContext.network;
     const isASupportedNetwork = SUPPORTED_NETWORKS.includes(network);

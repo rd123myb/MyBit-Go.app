@@ -23,7 +23,7 @@ export const withMetamaskErrors = (Component, shouldRenderComponent = true, hasB
     );
   }
 };
-
+//NOTE: the error inherits the props from context
 const MetamaskErrors = withMetamaskContext(({
   children,
   metamaskContext,

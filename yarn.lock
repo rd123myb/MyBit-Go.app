@@ -2093,7 +2093,7 @@
     "@hapi/bourne" "1.x.x"
     "@hapi/hoek" "8.x.x"
 
-"@mybit-v2/contracts@^2.0.0":
+"@mybit-v2/contracts@^2.0.0", "@mybit-v2/contracts@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@mybit-v2/contracts/-/contracts-2.0.1.tgz#55fd2926993d3742319952d3779b51407f865b36"
   integrity sha512-9XRABzJYE6ORqNoZay4mtwUOp9SxeCq04Y7kfTiGgNHkCG4LazPK4SFI7Y2y99ZNH9+JzQos/ahvkGsgQCa7Wg==
@@ -2111,10 +2111,10 @@
     web3-eth-abi "1.2.11"
     web3-utils "1.2.11"
 
-"@mybit-v2/network.js@^2.0.0":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@mybit-v2/network.js/-/network.js-2.0.2.tgz#9688ea05d159444de2ac3bd3c19fca37691cb2d6"
-  integrity sha512-sVTbMXxeFCdTysKp+yCX/aq+FjVHKOtMQ0IbOq+vGCCUEj07UoxB1JJITqw176WlDhtewk4XdBTLTVDjE6W6Kg==
+"@mybit-v2/network.js@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@mybit-v2/network.js/-/network.js-2.1.0.tgz#97cb37fde57cf8a7431509b022a7b278e5e6d7d6"
+  integrity sha512-oe6/dkmsZLd75gKTMmrUfSZRZPue/9KHlhty4qLngJW04hMrN03YDZfiqXV3jEKxahVvgPNgEfwszyZzNY6utA==
   dependencies:
     "@mybit-v2/contracts" "^2.0.0"
     bignumber.js "^8.0.2"
@@ -2200,6 +2200,13 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
+
+"@ramp-network/ramp-instant-sdk@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@ramp-network/ramp-instant-sdk/-/ramp-instant-sdk-2.3.0.tgz#8a1367ae19deee5a2fc0077e3dbb09b9ee7bb337"
+  integrity sha512-aalsPmAa+N1SnmSZ1hvHryyBOPU6adwYkETCkSZiX6Lwv8Ux52Luz/JSs9jPuSA/iG2uJrhPUUn4/5P5krQRaw==
+  dependencies:
+    body-scroll-lock "^2.6.4"
 
 "@sentry/browser@^5.19.2":
   version "5.23.0"
@@ -4270,6 +4277,11 @@ body-parser@1.19.0, body-parser@^1.16.0:
     qs "6.7.0"
     raw-body "2.4.0"
     type-is "~1.6.17"
+
+body-scroll-lock@^2.6.4:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-2.7.1.tgz#caf3f9c91773af1ffb684cd66ed9137b5b737014"
+  integrity sha512-hS53SQ8RhM0e4DsQ3PKz6Gr2O7Kpdh59TWU98GHjaQznL7y4dFycEPk7pFQAikqBaUSCArkc5E3pe7CWIt2fZA==
 
 boolbase@~1.0.0:
   version "1.0.0"
