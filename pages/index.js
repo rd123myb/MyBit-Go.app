@@ -19,19 +19,26 @@ const Explore = ({
     assets,
     loadingAssets,
   } = assetsContext;
-  const hasMetamaskErrors = metamaskContext.metamaskErrors();
-  if(hasMetamaskErrors.error){
-    return (
-      <MetamaskErrors
-        shouldRenderComponent={false}
-      />
-    )
-  }
+  // const hasMetamaskErrors = metamaskContext.metamaskErrors();
+  // if(hasMetamaskErrors.error){
+  //   return (
+  //     <MetamaskErrors
+  //       shouldRenderComponent={false}
+  //     />
+  //   )
+  // }
   if (loadingAssets) {
   // <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;
-   return <Loading message="Loading assets" />;
+  new RampInstantSDK({
+    hostAppName: 'MYB test',
+    hostLogoUrl: 'https://rory-my-bit-go-app-test.vercel.app/',
+    variant: 'embedded-desktop',
+    containerNode: document.getElementById('ramp-container'),
+  }).show();
+  //  return <Loading message="Loading assets" />;
   } else {
     return (
+      
       <AssetExplorer
         assets={assets}
         EXPLORE_PAGE_FUNDING_ACTIVE={LocalStorageKeys.EXPLORE_PAGE_FUNDING_ACTIVE}
@@ -39,6 +46,7 @@ const Explore = ({
         EXPLORE_PAGE_SELECTED_FILTERS={LocalStorageKeys.EXPLORE_PAGE_SELECTED_FILTERS}
         useLocalStorage
       />
+
     )
   }
 };
