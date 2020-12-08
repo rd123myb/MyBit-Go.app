@@ -28,24 +28,24 @@ const Explore = ({
   //   )
   // }
   if (loadingAssets) {
-  <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;
+  // <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;
   // new RampInstantSDK({
   //   hostAppName: 'MYB test',
   //   hostLogoUrl: 'https://rory-my-bit-go-app-test.vercel.app/',
   //   variant: 'embedded-desktop',
   //   containerNode: document.getElementById('ramp-container'),
   // }).show();
-  //  return <Loading message="Loading assets" />;
+   return <Loading message="Loading assets" />;
   } else {
     return (
-      
-      <AssetExplorer
-        assets={assets}
-        EXPLORE_PAGE_FUNDING_ACTIVE={LocalStorageKeys.EXPLORE_PAGE_FUNDING_ACTIVE}
-        EXPLORE_PAGE_SORT_BY={LocalStorageKeys.EXPLORE_PAGE_SORT_BY}
-        EXPLORE_PAGE_SELECTED_FILTERS={LocalStorageKeys.EXPLORE_PAGE_SELECTED_FILTERS}
-        useLocalStorage
-      />
+      <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>
+      // <AssetExplorer
+      //   assets={assets}
+      //   EXPLORE_PAGE_FUNDING_ACTIVE={LocalStorageKeys.EXPLORE_PAGE_FUNDING_ACTIVE}
+      //   EXPLORE_PAGE_SORT_BY={LocalStorageKeys.EXPLORE_PAGE_SORT_BY}
+      //   EXPLORE_PAGE_SELECTED_FILTERS={LocalStorageKeys.EXPLORE_PAGE_SELECTED_FILTERS}
+      //   useLocalStorage
+      //   />
 
     )
   }
