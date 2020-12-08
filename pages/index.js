@@ -28,14 +28,14 @@ const Explore = ({
   //   )
   // }
   if (loadingAssets) {
-  // <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;
+  <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>;
   // new RampInstantSDK({
   //   hostAppName: 'MYB test',
   //   hostLogoUrl: 'https://rory-my-bit-go-app-test.vercel.app/',
   //   variant: 'embedded-desktop',
   //   containerNode: document.getElementById('ramp-container'),
   // }).show();
-   return <Loading message="Loading assets" />;
+  //  return <Loading message="Loading assets" />;
   } else {
     return (
       <a href="https://buy.ramp.network/" target="_blank">Go to Ramp Instant</a>
