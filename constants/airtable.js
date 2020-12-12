@@ -25,3 +25,4 @@ export const verifyDataAirtable = (rules, records) => {
     return Object.keys(fields).includes(field) && valueOfField !== undefined;
   }));
 };
+//ANCHOR airtable schema file maybe?

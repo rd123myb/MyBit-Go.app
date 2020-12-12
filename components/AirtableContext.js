@@ -1,4 +1,5 @@
 import axios from 'axios';
+//ANCHOR make API call to airtable with axios? airtableContext (this file) exports assetProvider
 import { InternalLinks } from 'constants/links';
 import {
   AIRTABLE_ASSET_LISTINGS,
@@ -40,7 +41,7 @@ class AirtableProvider extends React.PureComponent {
       fetchNewAssetListing: this.fetchNewAssetListing,
     };
   }
-
+//ANCHOR functions up here ^ that get the info?
   getFiles = (filesString) => {
     const ipfsFiles = [];
     try {
@@ -108,7 +109,8 @@ class AirtableProvider extends React.PureComponent {
         coverPicture: fields['Cover Picture']?.[0],
       };
     });
-    return assetListings;
+    return assetListings; 
+    //ANCHOR returns assets listings ^
   }
 
   fetchNewAssetListing = async (network, updateFunction, assetId) => {

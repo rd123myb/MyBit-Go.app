@@ -1,5 +1,5 @@
 import { ETHERSCAN_API_KEY } from './apiKeys';
-
+//ANCHOR here are the api stuff
 const apiEndpoint = 'https://api.mybit.io';
 
 export const InternalLinks = {

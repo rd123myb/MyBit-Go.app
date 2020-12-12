@@ -190,7 +190,7 @@ export const addNewAsset = async (data, network) => {
   }
 };
 
-
+//ANCHOR is it ropsten? i so get ropsten from airtable, otherwise get the mainnet assets.
 export const pipeAssetListings = network => request(`https://api.airtable.com/v0/${network === 'ropsten' ? AIRTABLE_BASE_ASSETS_ROPSTEN : AIRTABLE_BASE_ASSETS_MAINNET}/Asset%20Listings?api_key=${process.env.AIRTABLE_KEY}`);
 
 export const pipeOperators = network => request(`https://api.airtable.com/v0/${network === 'ropsten' ? AIRTABLE_BASE_ASSETS_ROPSTEN : AIRTABLE_BASE_ASSETS_MAINNET}/Operators?api_key=${process.env.AIRTABLE_KEY}`);
