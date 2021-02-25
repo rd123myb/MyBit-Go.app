@@ -29,7 +29,7 @@ Note, this is an Alpha version which may not be well tested. Features in this ve
 
 <br/><br/>
 
-## Tools Used
+## Tgools Used
 #### [Now.sh](https://zeit.co/now)
 #### [Next.js](https://nextjs.org/)
 #### [Styled Components](https://www.styled-components.com/)
