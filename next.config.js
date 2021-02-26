@@ -61,7 +61,7 @@ const plugins = [
 
       config.resolve.alias['@'] = path.resolve(__dirname);
 
-      config.devtool = false;
+      config.devtool = 'inline-source-map';
       for (const r of config.module.rules) {
         if (r.loader === 'babel-loader') {
           r.options.sourceMaps = false;
